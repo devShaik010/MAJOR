@@ -1,0 +1,69 @@
+{% extends 'base.html' %}  
+{% block content %}
+
+<div class="row mx-auto bg-light"  >
+
+  <!-- filter -->
+  <div class="col-lg-2 mx-auto mt border-end ">
+    <!-- Hover added -->
+    <div class="list-group mt-3 "   >
+      <a href="?" class="list-group-item list-group-item-action border rounded-2 mb-1 text-center border-danger shadow-sm"><script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/ttioogfl.json"
+    trigger="loop"
+    delay="7500"
+    colors="primary:#121331,secondary:#ffffff,tertiary:#c71f16,quaternary:#e83a30,quinary:#f9c9c0"
+    style="width:37px;height:37px">
+</lord-icon> BOOKS</a>
+    </div>
+    {% for i in b_catogereis %}
+    <div class="list-group  ">
+      <a href="?categories={{i.id}}" class="list-group-item mb-1 list-group-item-action border rounded-6 shadow-sm " >
+        </lord-icon>{{i.name}}</a>
+    </div>
+    {% endfor %}
+    <hr>
+    {% for i in b_catogereis %}
+    <div class="list-group  ">
+   
+    </div>
+    {% endfor %}
+  </div>
+
+   
+  <div class="col-lg-10">
+    <div class="container-fluid w-100 ">
+      <div class="row">
+            {% for i in book %}
+            <div class="col ">
+              <div class="mt-4 card  shadow  borer border-rounded rounded-4 p-2 " >
+                <center>
+                <img src="{{i.image.url}}" class=" text-center" style="width:12rem; height: 14rem" alt="..." > 
+              </center>
+                <div class="card-body">
+                  <p class=" h6 card-title larg mt-1">{{i.name}}</p>
+                    <p class="small"><span>&#8377;</span>{{i.price}}&emsp;<del class=" disabled text-secondary"><span>&#8377;</span>{{i.discount}}</del>&emsp;<b class="text-success">%2 off</b></p>
+                    <p class="small">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p class="small">
+                    Read more...
+                    
+                  </p>
+                  <button class="btn  border-rounded border-opacity-75 bg-success rounded-5 shadow  w-100 text-white" style="height:2rem;font-size: small;height: auto; ">Add To Cart</button>
+              </div>
+           </div>
+          </div> 
+           {% endfor %}
+
+           
+           
+          
+
+</div>  
+<script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+{% endblock %}

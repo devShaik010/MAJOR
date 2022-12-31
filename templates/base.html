@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ink Spot _ E-Stationery</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/devShaik010/image-hosting/main/ink_spot_logo.svg" type="image/gif" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+      .form-control:focus {
+      border-color: #023006;
+      box-shadow: inset 0 1px 1px rgba(187, 226, 196, 0), 0 0 8px rgba(239, 243, 241, 0.637);
+        }
+        .fontsize{
+          font-size: small;
+        }
+  </style>
+  <body style="font-family: 'Montserrat', sans-serif;  ;background-color: #ffffff;behavior:smoth;" >
+    
+    <!-- Nev baar -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border">
+      <div class="container-fluid">
+        <img src="https://raw.githubusercontent.com/devShaik010/image-hosting/main/ink_spot_logo.svg" width="40" alt="">
+        <a class="navbar-brand text-success " href="/" style="font-family: 'Pacifico', cursive;">Ink Spot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active ps-4" aria-current="page" href="/" >HOME</a>
+            </li>
+            
+            <li class="nav-item">
+                <div class="dropdown  ps-4">
+                    <button class="btn  btn-white rounded-3 text-dark border-0 border-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CATOGERIES
+                    </button>
+                    <ul class="dropdown-menu rounded-3">
+                      <li><a class="dropdown-item" href="/product">STATIONARY </a></li>
+                      <li><a class="dropdown-item" href="/book">BOOK COLLECTION</a></li>
+                      <li><a class="dropdown-item" href="#">URDU BOOKS </a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active ps-4" href="#">SITE MAP</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active ps-4" href="#" >CONTACT</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">       
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                PROFILE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/login" >LOG IN</a></li>
+                <li><a class="dropdown-item" href="/signup">REGISTER</a></li>
+                <li><a class="dropdown-item" href="/admin">PARTNER</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+              </ul>
+             </li>
+             <li class="nav-item">
+              <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/nocvdjmh.json"
+                  trigger="hover"
+                  style="width:35px;height:35px">
+              </lord-icon>
+            </li>
+             </ul> 
+            </li>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- end nev -->
+
+    {% block content %}
+    
+    
+    
+    {% endblock %}
+
+    <br>
+    <br>
+    <div class="m-1 p-3 rounded-1 mt-5 border " style="background-color: #fefeff ;">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 fontsize text-dark">
+          <h5>Urdu ( Books )</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3 fontsize text-dark">
+          <h5>Note Books</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3 fontsize text-dark">
+          <h5>Art & Craft Tools</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+          </ul>
+        </div>
+        
+  
+        <div class="col-md-5 offset-md-1 fontsize text-dark">
+          <form>
+            <h5>Subscribe to our Ink Spot</h5>
+            <p>Order Online stationery Item.</p>
+            <div class="d-flex flex-column flex-sm-column w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <div class="form-outline w-100">
+                <textarea class="form-control" id="textAreaExample" rows="4"
+                  style="background: #fff;" placeholder="Comment"></textarea>
+              </div>
+              <button class="btn border-success text-success" style="background-color:rgb(255, 255, 255);" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="text text-dark">
+        @2022 copy right claim 
+      </div>
+    </footer>
+    
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
